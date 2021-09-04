@@ -13,9 +13,5 @@ cd Email-scan
 ls
 ```
 ```
-```
-```
 python3 emailscan.py
 ```
-
-
