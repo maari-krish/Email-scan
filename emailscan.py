@@ -84,14 +84,14 @@ def scan():
             rqst = requests.get(url,headers=header,timeout=10)
             sc = rqst.status_code
             if sc == 200:
-                print("The Email has been Breached")
+                print("Oh No\n Your Email has been Breached")
                 json_out = rqst.content.decode('utf-8', 'ignore')
                 simple_out = json.loads(json_out)
                 for item in simple_out:
                     print('\n'
                     '[+] Breached From : ' + str(item['Name']))
             elif sc == 404:
-                print('[+] The Email is Not Breached')
+                print('[+] Congratulations Your Email is Not Breached \n Please Change the Password Regularly.....')
             elif sc == 503:
                 print('\n')
                 print('[-] Error 503 : Request Blocked by Cloudflare DDoS Protection')
