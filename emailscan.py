@@ -92,6 +92,7 @@ def scan():
                     '[+] Breached From : ' + str(item['Name']))
             elif sc == 404:
                 print('[+] Congratulations Your Email is Not Breached \n Please Change the Password Regularly.....')
+                print('')
             elif sc == 503:
                 print('\n')
                 print('[-] Error 503 : Request Blocked by Cloudflare DDoS Protection')
